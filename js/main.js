@@ -3,7 +3,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     const targetId = link.getAttribute('href');
     const targetSection = document.querySelector(targetId);
 
-    if (!targetSection) return; // 🔥 safety check
+    if (!targetSection) return; 
 
     e.preventDefault();
     targetSection.scrollIntoView({

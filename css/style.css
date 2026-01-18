@@ -1,11 +1,9 @@
-/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* VARIABLES */
 :root {
   --bg-dark: #0f0c29;
   --bg-mid: #302b63;
@@ -16,7 +14,6 @@
   --accent: #a855f7;
 }
 
-/* GLOBAL */
 body {
   font-family: "Segoe UI", sans-serif;
   background: linear-gradient(135deg, var(--bg-dark), var(--bg-mid), var(--bg-light));
@@ -36,7 +33,6 @@ section {
   margin-bottom: 3rem;
 }
 
-/* HERO */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -55,7 +51,6 @@ section {
   gap: 4rem;
 }
 
-/* HERO TEXT */
 .hero-badge {
   display: inline-block;
   margin-bottom: 1rem;
@@ -101,7 +96,6 @@ section {
   color: var(--accent);
 }
 
-/* HERO IMAGE (FIXED – NO COLOR CONTAMINATION) */
 .hero-image {
   display: flex;
   align-items: center;
@@ -137,11 +131,9 @@ section {
   border-radius: 50%;
   object-fit: cover;
 
-  /* CLEAN, PROFESSIONAL PHOTO */
   filter: contrast(1.02) brightness(1.02);
 }
 
-/* CARDS */
 .skills-grid,
 .projects-grid {
   display: grid;
@@ -164,7 +156,6 @@ section {
   transform: translateY(-6px);
 }
 
-/* CONTACT */
 .contact-icons {
   display: flex;
   gap: 2.5rem;
@@ -181,7 +172,6 @@ section {
   transform: scale(1.2);
 }
 
-/* RESPONSIVE */
 @media (max-width: 900px) {
   .hero-glass {
     grid-template-columns: 1fr;
@@ -192,14 +182,13 @@ section {
     justify-content: center;
   }
 }
-/* PROJECT SHOWCASE GRID */
+
 .projects-grid.showcase {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2.5rem;
 }
 
-/* PROJECT CARD */
 .project-showcase {
   background: rgba(0, 0, 0, 0.35);
   border-radius: 18px;
@@ -210,7 +199,6 @@ section {
   text-align: center;
 }
 
-/* IMAGE */
 .project-showcase img {
   width: 100%;
   height: 180px;
@@ -219,13 +207,11 @@ section {
   margin-bottom: 1.2rem;
 }
 
-/* HOVER EFFECT */
 .project-showcase:hover {
   transform: translateY(-10px) scale(1.02);
   box-shadow: 0 0 40px rgba(168,85,247,0.45);
 }
 
-/* TEXT */
 .project-showcase h3 {
   font-size: 1.2rem;
   margin-bottom: 0.6rem;
@@ -244,7 +230,6 @@ section {
   margin-bottom: 1rem;
 }
 
-/* BUTTON */
 .project-btn {
   display: inline-block;
   padding: 0.55rem 1.4rem;
@@ -321,9 +306,6 @@ section {
 html {
   scroll-behavior: smooth;
 }
-/* =========================
-   NAVBAR STYLING
-========================= */
 
 .navbar {
   position: sticky;
@@ -351,14 +333,11 @@ html {
 .navbar a:hover {
   color: var(--accent);
 }
-/* =========================
-   EXPERIENCE – DECONGESTED
-========================= */
 
 .experience-card {
   max-width: 900px;
-  margin: 0 auto;            /* centers the card */
-  padding: 2.5rem 3rem;      /* more breathing space */
+  margin: 0 auto;          
+  padding: 2.5rem 3rem;      
   line-height: 1.7;
 }
 
@@ -379,9 +358,9 @@ html {
 }
 
 .experience-points li {
-  margin-bottom: 0.8rem;     /* key fix */
+  margin-bottom: 0.8rem;    
 }
-/* SCROLL REVEAL */
+
 .reveal {
   opacity: 0;
   transform: translateY(24px);
@@ -392,7 +371,7 @@ html {
   opacity: 1;
   transform: translateY(0);
 }
-/* ===== SKILL CARD UPGRADE ===== */
+
 .skill-card {
   position: relative;
 }
@@ -418,7 +397,6 @@ html {
   color: var(--muted);
 }
 
-/* ===== SCROLL REVEAL ===== */
 .reveal {
   opacity: 0;
   transform: translateY(24px);
@@ -429,9 +407,6 @@ html {
   opacity: 1;
   transform: translateY(0);
 }
-/* =========================
-   RESUME SECTION
-========================= */
 
 .resume-center {
   text-align: center;
@@ -481,7 +456,7 @@ html {
   transform: translateY(-3px);
   box-shadow: 0 0 20px rgba(168,85,247,0.5);
 }
-/* HERO BADGE HOVER */
+
 .hero-badge {
   transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
   cursor: default;
@@ -492,7 +467,7 @@ html {
   background: rgba(168, 85, 247, 0.3);
   box-shadow: 0 0 18px rgba(168, 85, 247, 0.45);
 }
-/* PRIMARY BUTTON HOVER */
+
 .btn.primary {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -501,7 +476,7 @@ html {
   transform: translateY(-3px);
   box-shadow: 0 0 25px rgba(168, 85, 247, 0.6);
 }
-/* SECONDARY BUTTON HOVER */
+
 .btn.secondary {
   transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
@@ -510,11 +485,7 @@ html {
   background: rgba(168, 85, 247, 0.15);
   transform: translateY(-2px);
 }
-/* =========================
-   CUSTOM SCROLLBAR (MERGED)
-========================= */
 
-/* Chrome, Edge, Safari */
 ::-webkit-scrollbar {
   width: 10px;
 }
