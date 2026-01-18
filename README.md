@@ -30,15 +30,15 @@ Designed with a clean **glassmorphism UI**, smooth interactions, and recruiter-f
 
 ## 📂 Project Structure
 
-Developer-Portfolio-website/
-│
-├── index.html
-├── css/
-│ └── style.css
-├── assets/
-│ ├── images/
-│ └── resume/
-│ └── Nikhil Resume.pdf
+    Developer-Portfolio-website/
+    │
+    ├── index.html
+    ├── css/
+    │ └── style.css
+    ├── assets/
+    │ ├── images/
+    │ └── resume/
+    │ └── Nikhil Resume.pdf
 
 ---
 
